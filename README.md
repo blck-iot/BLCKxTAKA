@@ -15,6 +15,32 @@ BLCK IoT, a company dedicated to decentralizing wireless networks for a sustaina
 ## Phase 1
 The first aspect of the collaboration involves tracking waste pick-ups on the blockchain, enabling Taka Earth to quantify and provide verifiable communication of their clients' sustainable waste capture efforts, both over long distances and within buildings. This digital ledger will be enriched with verifiable location data, ensuring transparency in tracking all greenhouse gas emission reduction efforts.
 
+### How are we achieving this?
+
+![Run flow](images/run.png)
+
+BLCK already deployed 60 Helium (LoRaWan) Gateways in Kenya. Helium is a decentralized wireless network on Solana.
+
+### Current Status
+
+One team is doing runs (*explain run*) with a GPS tracker. This helps us to map coverage in Nairobi (*add mapper link*).
+
+### Tech Stack
+
+- LoRaWan GPS nodes
+- Helium Gateways
+- LNS
+- MQTT (StreamR)
+(*can we use this to also get attention from StreamR?*)
+
+### Next Steps
+
+- setup missing coverage
+- Integrate data stream with Taka backend
+
+*Need to discuss how we want to make location data verifiable.*
+
+
 ## Phase 2
 The second aspect focuses on enhancing reporting for sustainable waste management by creating a recycling ledger that digitizes and hashes the existing value chain of recycling activities for tokenization. This step is essential for Taka Earth's goal of recording, measuring, and reporting every waste collection, ultimately accounting for these carbon stocks as financial assets, with a focus on Regenerative Finance (ReFi).
 
