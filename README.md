@@ -1,6 +1,6 @@
 # BLCKxTAKA
 
-[Taka Earth](https://www.taka.earth)
+[Taka Earth](https://www.taka.earth) ,
 [BLCK IoT](https://www.blck-iot.com)
 
 ## Taka Earth Teams Up with BLCK IoT to Drive Environmental Sustainability using Blockchain Technology 
