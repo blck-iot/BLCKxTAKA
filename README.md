@@ -25,14 +25,6 @@ BLCK already deployed 60 Helium (LoRaWan) Gateways in Kenya. Helium is a decentr
 
 One team is doing runs (*explain run*) with a GPS tracker. This helps us to map coverage in Nairobi (*add mapper link*).
 
-### Tech Stack
-
-- LoRaWan GPS nodes
-- Helium Gateways
-- LNS
-- MQTT (StreamR)
-(*can we use this to also get attention from StreamR?*)
-
 ### Next Steps
 
 - setup missing coverage
@@ -46,3 +38,33 @@ The second aspect focuses on enhancing reporting for sustainable waste managemen
 
 
 
+# Tech Stack
+
+- LoRaWan GPS nodes
+- Helium Gateways
+- LNS
+- MQTT (StreamR)
+(*can we use this to also get attention from StreamR?*)
+
+## StreamR Node
+
+Hungry Multiply Cart [Node Explorer](https://streamr.network/network-explorer/streams/0x8f34f641fd9e7b418aa5cf8650bd21b2201a300d%2Ftaka-pilot)
+
+It's a StreamR Broker Node, run by BLCK on AWS EC2 instance. (t2.medium)
+We tried t2.micro, but StreamR seemed to heavy on it. 
+
+### Publish to stream
+
+mqtt://user:secret@pubic-ip:1883
+
+
+### Subscribe
+
+```
+import mqtt from 'async-mqtt';
+const client = await mqtt.connectAsync(`mqtt://localhost:${port}`);
+client.on('message', (topic, message) => {
+  console.log(JSON.parse(message.toString()));
+});
+await client.subscribe(streamId);
+```
